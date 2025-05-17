@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Sản Phẩm - doTERRA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">... <!-- giữ header như cũ --> </header>
+
+  <section class="new-arrival">
+    <h2>Tất cả sản phẩm</h2>
+    <div class="products">
+      <!-- Copy các .product từ trang chủ hoặc thêm mới -->
+      <div class="product">
+        <img src="images/lavender.png" alt="Tinh dầu Lavender">
+        <p>Tinh Dầu Lavender</p>
+        <p><span>$35.99</span></p>
+      </div>
+      <!-- Thêm các sản phẩm khác -->
+    </div>
+  </section>
+
+  <footer class="footer">... </footer>
+</body>
+</html>
+

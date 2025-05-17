@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+* {
+  border-radius: 6px;
+  margin-top: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+/* ====== HEADER ====== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.icons span {
+  margin-left: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #f8f8f8;
+}
+
+.hero-text {
+  flex: 1;
+  z-index: 2;
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #fff;
+}
+
+.hero-text span {
+  color: #ffd6a0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 2px solid #bd8661;
+  color: #bd8661;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #843f2f;
+}
+
+/* ====== CAROUSEL ====== */
+.carousel-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.carousel-images img {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.carousel-images img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* ====== NEW ARRIVAL ====== */
+.new-arrival {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.new-arrival h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 23px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 180px;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product p {
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.product p span {
+  color: #bd8661;
+  font-weight: bold;
+  display: block;
+}
+
+/* ====== FEATURES ====== */
+.features {
+  background: #f1f1f1;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.feature-list div {
+  font-size: 18px;
+}
+
+.feature-list div a {
+  color: red;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+/* ====== BLOG SECTION ====== */
+.gapblog {
+  padding-bottom: 12px;
+}
+
+.blog {
+  padding: 50px 10%;
+  background: #fff;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.blog p {
+  max-width: 600px;
+  margin: 0 auto 70px auto;
+  color: #666;
+}
+
+.blog-grid {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.blog-grid div {
+  width: 300px;
+  text-align: left;
+}
+
+.blog-grid img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+/* ====== CONTACT SECTION ====== */
+.contact-section {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 30px 10%;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+.contact-form button {
+  padding: 12px;
+  background: #843f2f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #bd8661;
+}
+
+/* ====== FOOTER EXTENSION ====== */
+.contact-info-extension {
+  padding: 50px 20px;
+  background-color: #f9f9fb;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #bd8661;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #bd8661;
+}
+
+.btn-outline {
+  border: 2px solid #bd8661;
+  color: #bd8661;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #f0e6f8;
+}
+
+/* ====== FOOTER GRID ====== */
+.footer-links-grid {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 40px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.footer-links-grid h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.footer-links-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-grid li {
+  margin: 8px 0;
+}
+
+.footer-links-grid a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-links-grid a:hover {
+  color: #9c4dcc;
+}
+
+.footer-bottom-note {
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px;
+}
+
+.footer-bottom-note a {
+  color: #888;
+  text-decoration: none;
+}
+
+.footer-bottom-note a:hover {
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blog-grid {
+    flex-direction: column;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-grid {
+    text-align: center;
+  }
+}
